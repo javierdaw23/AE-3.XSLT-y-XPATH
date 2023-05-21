@@ -102,6 +102,10 @@
                                             <legend>Formulario de contacto</legend>
                                             <label for="nombre">Nombre: </label>
                                             <input id="nombre" type="text" name="edad"/>
+                                            <label for="fecha_nacimiento">Fecha de nacimiento: </label>
+                                            <input id="fecha_nacimiento" type="date" name="fecha_nacimiento"/>
+                                            <label for="telefono">Teléfono: </label>
+                                            <input id="telefono" type="tel" name="telefono"/>
                                             <label for="email">Correo electrónico:</label>
                                             <input id="email" type="email"/>
 
@@ -112,11 +116,20 @@
                                                     </div>  
                                                 </xsl:for-each>
                                             
+                                            <label for="comunicacion">Indique con quién desea contactar   </label>
+                                            <select name="comunicacion">
+                                                <option value="F"><xsl:value-of select="ite/profesores/profesor[1]/nombre"/></option>
+                                                <option value="R"><xsl:value-of select="ite/profesores/profesor[2]/nombre"/></option>
+                                                <option value="RA"><xsl:value-of select="ite/profesores/profesor[3]/nombre"/></option>
+                                                <option value="T"><xsl:value-of select="ite/profesores/profesor[4]/nombre"/></option>
+                                            </select>
+                                            
                                             <label for="consulta"> Consulta
                                             </label>
                                             <textarea name="consulta"/>
 
                                             <input type="submit" value="Enviar datos" />
+                                            <input type="reset" value="Limpiar formulario"/>
                                         </fieldset>
                                     </form>
 
