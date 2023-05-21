@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*font-family: 'Ubuntu', sans-serif;*/
+
+/*--- Generales ---*/
+html {
+    font-size: 10px;
+    font-family: 'Ubuntu',sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    /*Patrón de fondo inspirado por: https://www.magicpattern.design/tools/css-backgrounds*/
+    background-color: #e5e5f7;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 57.5px 57.5px, linear-gradient(#55009F 4.6000000000000005px, transparent 4.6000000000000005px) 0 -2.3000000000000003px, linear-gradient(90deg, #55009F 4.6000000000000005px, #e5e5f7 4.6000000000000005px) -2.3000000000000003px 0;
+    background-size: 115px 115px, 115px 115px, 57.5px 57.5px, 57.5px 57.5px;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.main-container {
+    max-width: 1200px;
+    padding: 3rem;
+    font-size: 2.2rem;
+}
+
+.section-container,
+ .header-container {
+    padding: 3rem 6rem 4rem;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 4px #00000014;
+    position: relative;
+    margin: 4rem 0;
+    background-color: white;
+}
+
+/*-- Cabecera inicial ---*/
+.page-title {
+    font-size: 5rem;
+    text-align: center;
+    background-color: #000014;
+    color: white;
+    margin: -7rem 0 4rem;
+    border-radius: 30px;
+    padding: .5rem 2.5rem;
+}
+.subtitle {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.text_highlight {
+    font-weight: bold;
+    color: #55009F;
+    background-color: #EAD2FF;
+    padding: .5rem 1rem;
+    border-radius: 7px;
+}
+
+    /*-- Links en la cabecera*/
+    .content-link {
+        color: #55009F;
+        font-weight: bold;
+        padding: .5rem 1rem;
+        transition: background-color 0.3s ease-in-out;
+        border-radius: 7px;
+    }
+    .content-link:hover,
+    .content-link:focus {
+        background-color: #EAD2FF;
+        font-weight: bold;
+    }
+
+    .content-link:focus {
+        outline: 1px solid #55009F;
+    }
+
+/*----*/
+
+
+/*--- NAVBAR ---*/
+ul.nav-list {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+ul.nav-list li {
+    display: inline-block;
+    margin: 1rem 1.5rem;
+}
+
+ul.nav-list li a {
+    text-decoration: none;
+    background-color: #e5e5f7;
+    padding: 1rem;
+    border-radius: 10px;
+}
+ul.nav-list li a:hover,
+ ul.nav-list li a:active{
+    outline: 2px solid;
+    font-weight: bold;
+}
+
+
+.section-title {
+    position: relative;
+    text-align: center;
+    font-size: 4rem;
+    background-color: #e5e5f7;
+    color: #55009f;
+    padding: 7rem 3rem;
+    border-radius: 25px;
+    display: block;
+}
+
+table.default-table {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    outline: 2px solid #000014;
+    outline-offset: -2px;
+    white-space: break-spaces;
+    word-wrap: break-word;
+    margin: 2rem auto;
+}
+
+table.default-table td,
+ table.default-table th {
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+}
+
+table.default-table th {
+    background-color: #000014;
+    color: white;
+}
+
+/*--Docentes --*/
+ol.lista-docentes li {
+    font-weight:bold;
+}
+ol.lista-docentes li::marker {
+    font-weight:bold;
+    color: #55009F
+}
+
+/*Formulario --*/
+input, label,textarea {
+    font-size: 2.4rem;
+}
+fieldset.form-contacto legend {
+    background: #e5e5f7;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #55009f;
+}
+fieldset.form-contacto label {
+    font-weight: bold;
+    display: block;
+
+}
+fieldset.form-contacto input {
+    margin-bottom: 2rem;
+    width: 100%;
+
+}
+fieldset.form-contacto input[type="checkbox"] {
+    width: auto;
+}
+fieldset.form-contacto textarea {
+    resize: none;
+    margin-bottom: 2rem;
+    width: 80%;
+    height: 30rem;
+
+}
+
+fieldset.form-contacto input[type="submit"] {
+    display: block;
+}
+
+@media screen and (max-width: 420px) {
+       
+    html {
+            font-size: 7px;
+        }
+}
