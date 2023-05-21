@@ -156,7 +156,7 @@ ol.lista-docentes li::marker {
 }
 
 /*Formulario --*/
-input, label,textarea {
+input, label,textarea,select {
     font-size: 2.4rem;
 }
 fieldset.form-contacto legend {
@@ -184,7 +184,10 @@ fieldset.form-contacto textarea {
     margin-bottom: 2rem;
     width: 80%;
     height: 30rem;
+}
 
+fieldset.form-contacto select {
+    margin-bottom: 2rem;
 }
 
 fieldset.form-contacto input[type="submit"] {
