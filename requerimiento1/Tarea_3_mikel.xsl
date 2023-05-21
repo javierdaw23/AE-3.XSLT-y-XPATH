@@ -130,8 +130,38 @@
            
         </article>
 </section>
-           
- </xsl:for-each>
+</xsl:for-each>
+             <h2>Contacto</h2>
+
+        <fieldset>
+            <legend>Datos personales:</legend>
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text" name="nombre"/>
+            <br/>
+
+            <label for="apellidos">Apellidos:</label>
+            <input id="apellidos" type="next" name="apellidos"/>
+            <br/>
+
+            <label for="curso">Curso interesado:</label>
+            <select name="curso" id="lang">
+            <xsl:for-each select="ite/ciclos/ciclo">
+                <option value=""><xsl:value-of select="nombre"/></option>
+            </xsl:for-each>
+            </select>
+            <br/>
+        
+            <label for="curso">Elige el profesor al que quieres realizar la consulta:</label>
+            <br/>
+            <xsl:for-each select="ite/profesores/profesor">
+            <label for="id"><xsl:value-of select="nombre"/></label>
+            <input type="radio" id="id" name="opcion" value="id"/>
+            <br/>
+            </xsl:for-each>
+            <br/>
+            <input type="submit" value="Enviar" />
+        </fieldset>
+ 
 </div>
     </main>
 
