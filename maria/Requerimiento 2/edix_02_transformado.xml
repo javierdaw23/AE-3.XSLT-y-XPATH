@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<edix>
+	<datos_contacto>
+		<nombre>Instituto Tecnológico Edix</nombre>
+		<web>https://institutotecnologico.edix.com</web>
+		<empresa>Proeduca</empresa>
+		<telefono>+34 91 787 39 91</telefono>
+	</datos_contacto>
+	<direccion>
+		<director nombre="Chon">
+			<despacho>Numero 31, 3ª Planta, Edificio A</despacho>
+		</director>
+		<jefe_estudios nombre="Dani">
+			<despacho>Numero 27, 2ª Planta, Edificio B</despacho>
+		</jefe_estudios>
+	</direccion>
+	<docencia>
+		<profesor id="1">
+			<nombre>Félix</nombre>
+		</profesor>
+		<profesor id="2">
+			<nombre>Raúl</nombre>
+		</profesor>
+		<profesor id="3">
+			<nombre>Raquel</nombre>
+		</profesor>
+		<profesor id="4">
+			<nombre>Tomás</nombre>
+		</profesor>
+	</docencia>
+	<formacion>
+		<ciclo id="ASIR" año="2009">
+			<nombre>Administración de Sistemas Informáticos en Red</nombre>
+			<grado>Superior</grado>
+		</ciclo>
+		<ciclo id="DAW" año="2010">
+			<nombre>Desarrollo de Aplicaciones Web</nombre>
+			<grado>Superior</grado>
+		</ciclo>
+		<ciclo id="DAM" año="2010">
+			<nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
+			<grado>Superior</grado>
+		</ciclo>
+	</formacion>
+</edix>
